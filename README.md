@@ -27,8 +27,13 @@
 
 Aqui será detalhado o passo a passo do provisionamento da nova funcionária e demais etapas como o estabelecimento do *Princípio do Menor Privilégio* e *Politicas de Senhas*.
 
-### 1. Garantimos que o grupo e o diretório do projeto estejam corretamente configurados antes de provisionar o usuário.
+## 1. Garantimos que o grupo e o diretório do projeto estejam corretamente configurados antes de provisionar o usuário.
 
-'''sudo addgroup dev_atlas'''
+### Criar um grupo específico para os desenvolvedores deste projeto:
 
 
+```sudo addgroup dev_atlas```
+
+Se outro desenvolvedor se juntar ao projeto, basta adicioná-lo a este grupo, simplificando o gerenciamento.
+
+*Em desenvolvimento...*
