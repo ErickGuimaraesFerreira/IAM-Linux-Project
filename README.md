@@ -31,6 +31,9 @@ Aqui será detalhado o passo a passo do provisionamento da nova funcionária e d
 
 ### Criar um grupo específico para os desenvolvedores deste projeto:
 
+![Imagem Primeiro Comando](1.png)
+
+
 
 ```sudo addgroup dev_atlas```
 
