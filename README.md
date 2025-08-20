@@ -36,7 +36,31 @@ Aqui será detalhado o passo a passo do provisionamento da nova funcionária e d
 
 
 ```sudo addgroup dev_atlas```
-
 Se outro desenvolvedor se juntar ao projeto, basta adicioná-lo a este grupo, simplificando o gerenciamento.
 
+## 2. Criar o diretório do projeto e atribuir as permissões base:
+
+
+![Imagem Primeiro Comando](Project-IAM/2.png)
+
+*Root* é o dono, *dev_atlas* é o grupo. Membros do grupo podem fazer tudo, outros só leem/executam, e o bit SGID (g+s) garante que novos arquivos pertençam ao grupo dev_atlas.
+
 *Em desenvolvimento...*
+
+## Etapa 2: Criação da Identidade Digital (ana.silva)
+
+````
+sudo useradd -m -s /bin/bash -g dev_atlas -c "Ana Silva - Dev Jr." ana.silva
+````
+
+## Etapa 3: Implementação da Política de Senhas
+
+````
+sudo passwd ana.silva
+sudo passwd --expire ana.silva
+````
+Entregar uma senha temporária cria uma janela de oportunidade. Forçar a expiração mitiga esse risco, transferindo a responsabilidade da senha para o usuário final imediatamente.
+
+
+
+
