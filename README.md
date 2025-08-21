@@ -61,6 +61,14 @@ sudo passwd --expire ana.silva
 ````
 Entregar uma senha temporária cria uma janela de oportunidade. Forçar a expiração mitiga esse risco, transferindo a responsabilidade da senha para o usuário final imediatamente.
 
+````
+sudo chage -m 7 -M 90 -W 14 ana.silva
+````
 
+````-m 7````: A senha só pode ser alterada após um mínimo de 7 dias.
+
+````-M 90````: A senha expira em 90 dias, forçando a rotação periódica.
+
+````-W 14````: O usuário receberá um aviso de expiração 14 dias antes do prazo.
 
 
