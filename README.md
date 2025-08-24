@@ -71,4 +71,17 @@ sudo chage -m 7 -M 90 -W 14 ana.silva
 
 ````-W 14````: O usuário receberá um aviso de expiração 14 dias antes do prazo.
 
+## Etapa 4: Implementação da Política de Senhas
+
+Editar o arquivo sudoers de forma segura:
+
+````
+sudo visudo
+````
+Adicionar a regra específica para o grupo *dev_atlas*:
+````
+%dev_atlas ALL=(ALL) /usr/bin/tail -f /var/log/apache2/error.log
+````
+Análise da Regra: Esta regra é extremamente granular. Membros do grupo *dev_atlas* podem executar, via sudo, *apenas e tão somente o comando tail -f no arquivo de log de erros específico*. Qualquer outra tentativa, como sudo tail /etc/shadow ou sudo reboot, será bloqueada e registrada.
+
 
