@@ -25,7 +25,7 @@
 
 ## Etapa de Provisionamento 
 
-Aqui será detalhado o passo a passo do provisionamento da nova funcionária e demais etapas como o estabelecimento do *Princípio do Menor Privilégio* e *Politicas de Senhas*.
+Aqui será detalhado o passo a passo do *provisionamento* da nova funcionária e demais etapas como o estabelecimento do *Princípio do Menor Privilégio* e *Politicas de Senhas*.
 
 ## 1. Garantimos que o grupo e o diretório do projeto estejam corretamente configurados antes de provisionar o usuário.
 
