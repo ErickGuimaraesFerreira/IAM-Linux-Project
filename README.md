@@ -5,7 +5,7 @@
 
 ### Servidor: SRV-WEB-01 (Ubuntu 22.04 LTS), que hospeda múltiplos projetos de clientes.
 
-**Novo Colaborador:** Ana Silva, uma Desenvolvedora Web Júnior.s
+**Novo Colaborador:** Ana Silva, uma Desenvolvedora Web Júnior.
 
 **Tarefa de Ana:** Ela foi designada para trabalhar exclusivamente no projeto_atlas, cujo diretório web está em /var/www/projeto_atlas. Suas responsabilidades são:
 
